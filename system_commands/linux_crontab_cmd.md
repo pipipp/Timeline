@@ -1,14 +1,14 @@
-#Linux系统下使用crontab命令定时执行任务
+# Linux系统下使用crontab命令定时执行任务
 
-##基本命令：
+## 基本命令：
 * [ crontab -e ]  - 打开vi编译器，输入要执行的命令  
 * [ crontab -l ]  - 查看所有已执行的任务  
 * [ crontab -r ]  - 删除所有执行任务  
 
-##查询任务执行日志：
+## 查询任务执行日志：
 * [ cat /var/spool/mail/{enter your username} ] 
 
-##crontab -e 用法：
+## crontab -e 用法：
 minute   hour   day   month   week   command     顺序：分 时 日 月 周  
 其中：  
 * [ minute ]      - 表示分钟，可以是从0到59之间的任何整数。  
@@ -24,7 +24,7 @@ minute   hour   day   month   week   command     顺序：分 时 日 月 周
 * [ 中杠（-） ]      - 可以用整数之间的中杠表示一个整数范围，例如“2-6”表示“2,3,4,5,6”  
 * [ 正斜线（/） ]    - 可以用正斜线指定时间的间隔频率，例如“0-23/2”表示每两小时执行一次。同时正斜线可以和星号一起使用，例如*/10，如果用在minute字段，表示每十分钟执行一次。  
 
-##使用示例：
+## 使用示例：
 1. 打开Terminal窗口输入`crontab  -e`进入vi编辑框  
 2. 写入执行命令  
     * 每分钟执行一次command  
