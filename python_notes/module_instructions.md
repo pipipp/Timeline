@@ -29,4 +29,4 @@ UnicodeDecodeError:"gbk" codec can't decode byte 0xaa in position 160:illegal mu
 # python开启网络服务（有效端口号：1024-65535）
 * [ python -m http.server 7777 ]    - 使用命令开启网络服务
 
-电脑开启网络服务后，使用手机浏览器输入（电脑IP地址:端口号）可直接下载电脑内的文件  
+电脑开启网络服务后，使用手机浏览器输入（**电脑IP地址:端口号**）可直接下载电脑内的文件  
