@@ -1,4 +1,4 @@
-# pyinstaller安装和使用说明
+# pyinstaller使用说明
 
 ## 基本命令
 * [ pyinstaller ./{py文件名} ]         - 效果是有一堆的依赖文件在dist文件夹下  
