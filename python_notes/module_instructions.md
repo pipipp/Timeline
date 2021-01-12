@@ -42,3 +42,12 @@ UnicodeDecodeError:"gbk" codec can't decode byte 0xaa in position 160:illegal mu
 
 将会开启一个 http://0.0.0.0:7777/ 的网络服务  
 在同一个网络内的设备可以打开浏览器输入（**共享文件的电脑IP地址:端口号**）进入共享的文件夹，预览并下载文件  
+
+# 生成requirements文件
+1. 导入Python环境下所有的包  
+命令：pip freeze > requirements.txt
+2. 导入当前目录程序使用到的包  
+使用pipreqs模块：pip install pipreqs  
+命令：pipreqs . --encoding=utf8 --force
+3. 安装requirements  
+命令：pip install -r requirements.txt  
