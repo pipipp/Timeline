@@ -50,3 +50,14 @@ if value=vbOK Then
 	obj.SendKeys "{F5}"  '按F5刷新页面  
 	Loop  '开启无限循环  
 End if  
+
+## 检查命令结果
+set obj=WScript.CreateObject("WScript.Shell")  
+set echo = obj.exec("ipconfig")  '使用exec执行命令，返回一个对象  
+result = echo.Stdout.ReadAll  '使用Stdout抓取输出结果  
+msgbox(result)  
+if InStr(result, "IP配置") > 0 then  '判断是否在输出结果里面  
+    msgbox("Passed")  
+Else  
+    msgbox("Failed")  
+End if  
