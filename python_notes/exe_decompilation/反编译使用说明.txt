@@ -1,0 +1,9 @@
+反编译使用说明：
+
+安装：
+1. 下载pyinstxtractor.py：https://github.com/extremecoders-re/pyinstxtractor/blob/master/pyinstxtractor.py
+2. pip安装uncompyle6模块
+
+使用：
+1. 打开CMD，输入 python3 pyinstxtractor.py file.exe  ->  执行完后会生成一个 file..exe_extracted 文件夹
+2. 进入到 file.exe_extracted文件夹，输入 uncompyle6 -o . main.pyc  ->  执行完后会生成一个main.py（这个文件就是反编译后的Python源码）
